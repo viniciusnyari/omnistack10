@@ -15,3 +15,17 @@ https://rocketseat.com.br/week-10/aulas
 5) About git - tutorial de como usar o vscode com o GitHub
 https://www.youtube.com/watch?v=Fk12ELJ9Bww
 
+6)Adicionar o nodemon (para atualizar sempre o nodejs)
+yarn add modemon -D
+
+7)Roda uma única vez o node e atualizará sempre a cada atualização de arquivo
+yarn nodemon index.js
+
+8) Ou se pode colocar para rodar um script
+package.json
+"scripts": {
+    "dev" : "nodemon index.js"
+  },
+  
+Na linha de comando somente 'yarn dev' tem o mesmo funcionamento do item 7  
+
