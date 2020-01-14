@@ -1,18 +1,17 @@
 Powershell
 1) Choco install nodejs-lts (instalando a última versão do nodejs)
 
-Extensões do VSCODE
-Material Icon Theme
-Dracula Official
-Terminal Dracula RocketSeat (deixar o ambiente igual ao do instrutor - vídeo)
+2)Extensões do VSCODE
+    Material Icon Theme
+    Dracula Official
+    Terminal Dracula RocketSeat (deixar o ambiente igual ao do instrutor - vídeo)
 
+3)Repositório Omnistack on GitHub: 
+https://github.com/viniciusnyari/omnistack10.git 
+
+4) Endereço do Omnistack
 https://rocketseat.com.br/week-10/aulas
 
----------------------------------------------------------------------------
-About git
-References:
-https://code.visualstudio.com/docs/ed...
-https://git-scm.com/downloads
-https://www.youtube.com/playlist?list...
+5) About git - tutorial de como usar o vscode com o GitHub
+https://www.youtube.com/watch?v=Fk12ELJ9Bww
 
-https://github.com/viniciusnyari/omnistack10.git 
