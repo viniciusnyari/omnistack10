@@ -1,7 +1,20 @@
 Powershell
-Choco install nodejs-lts
+1) Choco install nodejs-lts (instalando a última versão do nodejs)
 
 Extensões do VSCODE
 Material Icon Theme
 Dracula Official
+Terminal Dracula RocketSeat (deixar o ambiente igual ao do instrutor - vídeo)
 
+https://rocketseat.com.br/week-10/aulas
+
+---------------------------------------------------------------------------
+About git
+References:
+https://code.visualstudio.com/docs/ed...
+https://git-scm.com/downloads
+https://www.youtube.com/playlist?list...
+
+https://github.com/viniciusnyari/omnistack10.git
+
+ 
