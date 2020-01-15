@@ -1,6 +1,7 @@
 const { Router} = require('express');
-const axios = require('axios');
-const Dev = require('./Models/Dev');
+const DevController = require('./Controller/DevController');
+const SearchController = require('./Controller/SearchController');
+
 const routes = Router();
 
 //Métodos HTTTP: get, post, put, delete
@@ -24,28 +25,14 @@ routes.delete('/users/:id',(request, response)=> {
     return response.json({message: 'Hello Omnistack 1.0'});
 });
 
+//Fazendo uso do método GET com JSON
+routes.get('/devs', DevController.index);
+
 //Fazendo uso do método POST com JSON
-routes.post('/devs', async (request, response)=> {    
-    //console.log(request.body); //método post ou put e retornará o JSON passados no Query do Insomnia
-    const { github_username, techs } = request.body;
+routes.post('/devs', DevController.store);
 
-    const apiResponse = await axios.get(`https://api.github.com/users/${github_username}`);
-
-    //busca name, porém se estiver nulo, busca login
-    const { name = login, avatar_url, bio } = apiResponse.data;
-
-    const techsArray = techs.split(',').map(tech=> tech.trim());
-    
-    const dev = await Dev.create({
-        github_username,
-        name,
-        avatar_url,
-        bio,
-        techs: techsArray
-    });
-
-    return response.json(dev);
-});
+//Fazendo uso do método GET com JSON
+routes.get('/search', SearchController.index);
 
 //exportando as rotas desse arquivo
 module.exports = routes; 
