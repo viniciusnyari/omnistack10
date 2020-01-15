@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, {useState} from 'react';
+import Header from './Header';
+
+//Conceitos do React
+//Componente: bloco isolado de HTML, CSS e JS, o qual não interfere no restante da aplicação
+//Estado: Informações mantidas pelo componente (Lembrar: imutabilidade)
+//Propriedade: informações que um componente pai passa para os componentes filhos
 
 function App() {
+
+  //cria uma constante array que desestrutura (de array para variáveis) a informação do userState
+  const [counter,setCounter] = useState(0);
+
+  function incrementCounter() {
+    //O React sempre cria um novo objeto (imutabilidade)
+    setCounter(counter+1);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>      
+      {/* <Header title="Dashboard Automático"/>
+      <Header title="Dashboard Manual"/>
+      <Header title="Dashboard Provisório"/> */
+      }
+      <h1> Contador: {counter}</h1>
+      <button onClick={incrementCounter}>Incrementar</button>
+    </>
   );
 }
 
