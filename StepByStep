@@ -32,4 +32,11 @@ Na linha de comando somente 'yarn dev' tem o mesmo funcionamento do item 7
 9)Management MongoDB
 https://www.mongodb.com/download-center/compass
 
-1:06:29
+10) Acessando o back através do front
+yarn add cors
+
+11) Rodando a aplicação web
+yarn start
+
+12) Rodando o backend (foi feito uma configuração no json para isso em script)
+yarn dev
