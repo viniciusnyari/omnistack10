@@ -40,3 +40,32 @@ yarn start
 
 12) Rodando o backend (foi feito uma configuração no json para isso em script)
 yarn dev
+
+13) doc.rocketseat.dev - base de conhecimento
+
+14) Intalando o Expo (facilitar a transformação de JS em Android/IOS)
+yarn global add expo-cli
+
+15) Após instalar o Expo (similar ao create app do React)
+expo init mobile
+
+16) Após passo 16 'yarn start'
+
+17) Native - navegação
+https://reactnavigation.org/docs/en/getting-started.html
+
+No terminal:
+yarn add react-navigation
+yarn add @react-native-community/masked-view
+
+Em seguida
+https://docs.expo.io/versions/latest/
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context
+
+yarn add react-navigation-stack
+
+18) Native - Mapa
+https://docs.expo.io/versions/latest/
+API Reference / MapView (https://docs.expo.io/versions/v36.0.0/sdk/map-view/)
+Run expo install react-native-maps
+
