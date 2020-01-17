@@ -69,3 +69,12 @@ https://docs.expo.io/versions/latest/
 API Reference / MapView (https://docs.expo.io/versions/v36.0.0/sdk/map-view/)
 Run expo install react-native-maps
 
+19) Instalando expo location para que o usuário selecione a localização
+expo install expo-location
+
+20) Instalando o expo WebView para visualizar o perfil do github
+expo install react-native-webview
+
+
+1:17:15
+
