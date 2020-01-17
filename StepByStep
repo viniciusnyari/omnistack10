@@ -76,5 +76,8 @@ expo install expo-location
 expo install react-native-webview
 
 
+21) Para usar a API é necessário que esteja rodando
+Acessar o powershell e na basta backend digite: yarn dev
+
 1:17:15
 
