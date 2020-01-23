@@ -4,6 +4,8 @@ import { StyleSheet, Image, View, Text, TextInput, TouchableOpacity } from 'reac
 import { requestPermissionsAsync, getCurrentPositionAsync} from 'expo-location';
 import { MaterialIcons } from '@expo/vector-icons';
 import api from '../services/api';
+import socket from '../services/socket';
+import { connect, disconnect } from '../services/socket';
 
 function Main( { navigation}) {
 
@@ -33,6 +35,16 @@ function Main( { navigation}) {
 
     },[]);
 
+    function setupWebsocket() {
+
+        const { latitude, longitude } = currentRegion;
+        connect(
+            latitude,
+            longitude,
+            techs
+        );
+    }
+
     async function loadDevs(){
        
        const { latitude, longitude} = currentRegion;
@@ -46,6 +58,7 @@ function Main( { navigation}) {
        });
 
        setDevs(response.data.devs);
+       setupWebsocket();
     }
 
     function handleRegionChange(region){

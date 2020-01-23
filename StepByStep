@@ -79,5 +79,9 @@ expo install react-native-webview
 21) Para usar a API é necessário que esteja rodando
 Acessar o powershell e na basta backend digite: yarn dev
 
-1:17:15
+22) Adicionar o axios no react-native 
+yarn add axios
+
+23) Adicionando socket ao BackEnd
+Adicione a extensão: yarn add socket.io
 
