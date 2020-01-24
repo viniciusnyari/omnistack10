@@ -84,4 +84,18 @@ yarn add axios
 
 23) Adicionando socket ao BackEnd
 Adicione a extensão: yarn add socket.io
+Estamos acostumados requisições HTTP (GET, PUT, POST e DELETE)
+Necessidade de informar o front end sem requisições http
+Protocolo WebSocket permite esse tipo de conexão
+
+24) Adicionando o socket ao mobile
+Adicione a extensão: yarn add socket.io-client
+
+25) Startando mobile
+yarn start
+
+26) Startando backend
+yarn dev
+
+
 
