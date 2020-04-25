@@ -3,3 +3,101 @@ Semana Omnistack 10 - Janeiro de 2020
 
 Primeiros passos em React com base na Semana Omnistack da RocketSeat
 
+Powershell
+1) Choco install nodejs-lts (instalando a última versão do nodejs)
+
+2)Extensões do VSCODE
+    Material Icon Theme
+    Dracula Official
+    Terminal Dracula RocketSeat (deixar o ambiente igual ao do instrutor - vídeo)
+
+3)Repositório Omnistack on GitHub: 
+https://github.com/viniciusnyari/omnistack10.git 
+
+4) Endereço do Omnistack
+https://rocketseat.com.br/week-10/aulas
+
+5) About git - tutorial de como usar o vscode com o GitHub
+https://www.youtube.com/watch?v=Fk12ELJ9Bww
+
+6)Adicionar o nodemon (para atualizar sempre o nodejs)
+yarn add modemon -D
+
+7)Roda uma única vez o node e atualizará sempre a cada atualização de arquivo
+yarn nodemon index.js
+
+8) Ou se pode colocar para rodar um script
+package.json
+"scripts": {
+    "dev" : "nodemon index.js"
+  },
+  
+Na linha de comando somente 'yarn dev' tem o mesmo funcionamento do item 7  
+
+9)Management MongoDB
+https://www.mongodb.com/download-center/compass
+
+10) Acessando o back através do front
+yarn add cors
+
+11) Rodando a aplicação web
+yarn start
+
+12) Rodando o backend (foi feito uma configuração no json para isso em script)
+yarn dev
+
+13) doc.rocketseat.dev - base de conhecimento
+
+14) Intalando o Expo (facilitar a transformação de JS em Android/IOS)
+yarn global add expo-cli
+
+15) Após instalar o Expo (similar ao create app do React)
+expo init mobile
+
+16) Após passo 16 'yarn start'
+
+17) Native - navegação
+https://reactnavigation.org/docs/en/getting-started.html
+
+No terminal:
+yarn add react-navigation
+yarn add @react-native-community/masked-view
+
+Em seguida
+https://docs.expo.io/versions/latest/
+expo install react-native-gesture-handler react-native-reanimated react-native-screens react-native-safe-area-context
+
+yarn add react-navigation-stack
+
+18) Native - Mapa
+https://docs.expo.io/versions/latest/
+API Reference / MapView (https://docs.expo.io/versions/v36.0.0/sdk/map-view/)
+Run expo install react-native-maps
+
+19) Instalando expo location para que o usuário selecione a localização
+expo install expo-location
+
+20) Instalando o expo WebView para visualizar o perfil do github
+expo install react-native-webview
+
+
+21) Para usar a API é necessário que esteja rodando
+Acessar o powershell e na basta backend digite: yarn dev
+
+22) Adicionar o axios no react-native 
+yarn add axios
+
+23) Adicionando socket ao BackEnd
+Adicione a extensão: yarn add socket.io
+Estamos acostumados requisições HTTP (GET, PUT, POST e DELETE)
+Necessidade de informar o front end sem requisições http
+Protocolo WebSocket permite esse tipo de conexão
+
+24) Adicionando o socket ao mobile
+Adicione a extensão: yarn add socket.io-client
+
+25) Startando mobile
+yarn start
+
+26) Startando backend
+yarn dev
